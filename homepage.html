@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="header">
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Hruthwik</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">CONTACT     </a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div> 
+        <div class="content">
+            <h1>Web Designer & <br><span>Developer</span> <br>Hi, I'm Hruthwik  </h1>
+            
+
+                
+
+                
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div  class="main1">
+        <div class="row">
+            <div class="col1">
+                 <img src="2.jpeg">
+            </div>
+        
+            <div class="col2">
+                <h1>About Me</h1>
+                <p> 
+                    I'm Hruthwik , a passionate project contributor, bringing expertise, dedication, creativity to achieve project success and exceed expectations.I'm interested <br>in creating websites and designing it. I have knowledge about front-end <br> frameworks </p>
+
+                   <div class="tab-titles">
+                       <p class= "tab-links active-link" onclick="opentab('skills')">skills</p>
+                       <p class= "tab-links " onclick="opentab('Experience')">Experience</p>
+                       <p class= "tab-links "  onclick="opentab('Education')" >Education</p>
+                       
+                   </div>
+                   <div class="tab-contents" active-tab id="skills">
+                      <ul>
+                        <li><span>Front-end </span> <br>HTML , CSS , JAVASCRIPT </li>
+                        <li><span>Back-end</span> <br>MYSQL , PHP </li>
+                        <li><span>web-designer</span> <br>Designing web interface</li>
+                      </ul>
+
+                    </div>
+                   <div class="tab-contents" id="Experience">
+                      <ul>
+                       <li><span>8 weeks </span> <br> web development</li>
+                       <li><span>2022</span> <br> internship  </li>
+                       <li><span>2023</span> <br>mini project</li>
+                      </ul>
+
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                         <li><span>2019</span><br>primary education <br></li>
+                         <li><span>2020</span> <br>secondary education </li>
+                         
+                         <li><span>2022</span> <br> BE information technology</li>
+                         <li><span>2023</span> <br> web Designing training</li>
+                        </ul>
+  
+                      </div>
+
+                 </div>
+
+
+            </div>
+             
+                  
+        
+            
+        </div>
+    
+        <script >
+            var tablinks=document.getElementsByClassName("tab-links");
+            var tabcontents=document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+        </script>
+    
+    
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="navbar">
+            <div class="icon">
+                <h1 class="logo">ContactMe</h1>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="contact-left">
+                
+                <p>contact@hruthwik05@gmail.com</p>
+                
+                <div class="social">
+                    <img src="3.jpeg">  
+                    <img src="5.jpeg">
+                    <img src="6.jpeg">
+                    <img src="7.jpeg">
+
+                </div>
+                <p>0123456789</p>
+                <div class="soc">
+                    <img src="4.jpeg">  
+
+                </div>
+            </div>
+           <div class="contact-right">
+              <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your E-mail" required>
+                 <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                 <button type="submit">Submit</button>
+                 
+              </form>
+
+           </div>
+
+            
+
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
+
+
